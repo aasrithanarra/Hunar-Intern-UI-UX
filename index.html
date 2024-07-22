@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Brand Logo</h1>
+        </header>
+        <main>
+            <h2>Create Your Account</h2>
+            <form id="sign-up-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <div class="input-container">
+                        <i class="icon user-icon"></i>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <span class="error" id="name-error">Please enter your full name</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-container">
+                        <i class="icon email-icon"></i>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <span class="error" id="email-error">Please enter a valid email address</span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-container">
+                        <i class="icon password-icon"></i>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <span class="error" id="password-error">Please enter your password</span>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <div class="input-container">
+                        <i class="icon password-icon"></i>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <span class="error" id="confirm-password-error">Passwords do not match</span>
+                </div>
+                <div class="form-group">
+                    <label for="mobile-number">Mobile Number</label>
+                    <div class="input-container">
+                        <i class="icon phone-icon"></i>
+                        <input type="tel" id="mobile-number" name="mobile-number" required>
+                    </div>
+                    <span class="error" id="mobile-error">Please enter your mobile number</span>
+                </div>
+                <button type="submit" id="sign-up-button">Sign Up</button>
+            </form>
+        </main>
+        <footer>
+            <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> | <a href="#">Support</a>
+        </footer>
+    </div>
+</body>
+</html>
